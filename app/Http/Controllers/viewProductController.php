@@ -27,7 +27,9 @@ class viewProductController extends Controller
     {
         //
         return view('viewProduct');
-    }
+    
+	
+	}
 
     /**
      * Store a newly created resource in storage.
@@ -38,7 +40,7 @@ class viewProductController extends Controller
     public function store()
     {
         //
-        $DBname = "wtlab108";
+        $DBname = "lumen";
         $DBhost = "127.0.0.1";
         $DBuser = 'root';
         $DBpass = '';

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Auth;
   //包含解token的部分及資料庫的部分
 
 
-        $DBname = "wtlab108";
+        $DBname = "lumen";
         $DBhost = "127.0.0.1";
         $DBuser = 'root';
         $DBpass = '';

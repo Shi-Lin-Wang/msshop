@@ -27,7 +27,7 @@ function start(){
 
   console.log();
   $.ajax({
-    url:"../../php/navSigninCheck.php",  //呼叫的位址
+    url:"",  //呼叫的位址
     type:"GET",      //請求方式
     dataType:'json', //預期server回傳的形式
     success: function(reData){     //成功的時候跑的函式
@@ -51,8 +51,10 @@ function logout(){
 	var now = new Date();
 	now.setTime(now.getTime()-1000*600);
 	document.cookie = "token=null;expires="+now.toGMTString()+";path=/wtlab108;domain=127.0.0.1";
-	//document.cookie = "token=null;expires="+now.toGMTString()+";path=/wtlab108;domain=140.127.74.168";
-	window.location = "login";
+  //document.cookie = "token=null;expires="+now.toGMTString()+";path=/wtlab108;domain=140.127.74.168";
+  unset($_SESSION['token']);
+  window.location = "http://140.127.74.145/mslogin/public/login";
+  session_destroy();
 }
 
 //haru偷偷加的

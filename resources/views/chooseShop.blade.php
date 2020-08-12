@@ -12,27 +12,27 @@ body,h1,h2{
 <body>
 
 <div class="w3-display-container" style="margin-bottom:50px">
-  <img src="../imgs/tangle.gif" style="width:100%">
+  <img src="imgs/tangle.gif" style="width:100%">
   <div class="w3-display-bottomleft w3-container w3-teal w3-hover-cyan w3-hide-small"
    style="bottom:20%;opacity:0.7;width:100%">
 	<h2><b>IOTA區塊練<br>線上商店交易平台</b></h2>
   </div>
 </div>
 
-<div class="w3-center"><img src="../imgs/LOGO4.png" style="width:350px;;"></div>
+<div class="w3-center"><img src="imgs/LOGO4.png" style="width:350px;;"></div>
 
 <div class="w3-row w3-container" style="margin:50px 0">
 <div class="w3-half w3-container">
   <div class="w3-topbar w3-border-teal">
-    <img src="imgs/starbox.jpg" style="width:100%" onclick="window.location.assign('browserProduct.html?id=1')">
-    <a href="/browserProduct?id=1"><h2>我們家 & Starbox 冷飲站</h2></a>
+    <img src="imgs/starbox.jpg" style="width:100%" onclick="window.location.assign('http://140.127.74.145/msshop/public/browserProduct.html?id=1')">
+    <a href="http://140.127.74.145/msshop/public/browserProduct?id=1"><h2>我們家 & Starbox 冷飲站</h2></a>
     <p>不管他嗑了什麼都給我來一杯</p>
   </div>
 </div>
 
 <div class="w3-half w3-container">
   <div class="w3-topbar w3-border-teal">
-    <img src="../imgs/wtlab.jpg" style="width:100%" onclick="window.location.assign('browserProduct.html?id=0')">
+    <img src="imgs/wtlab.jpg" style="width:100%" onclick="window.location.assign('http://140.127.74.145/msshop/public/browserProduct.html?id=0')">
     <a href="/browserProduct.html?id=0"><h2>Super WTLab's Shop</h2></a>
     <p>高雄發大財</p>
   </div>

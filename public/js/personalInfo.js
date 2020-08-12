@@ -26,7 +26,9 @@ function logout(){
     now.setTime(now.getTime()-1000*600);
     document.cookie = "token=null;expires="+now.toGMTString()+";path=/wtlab108;domain=wtlab.ddns.net";
     //document.cookie = "token=null;expires="+now.toGMTString()+";path=/wtlab108;domain=140.127.74.168";
-    window.location = "http://localhost:8004/login";
+    unset($_SESSION['token']);
+    window.location = "http://140.127.74.145/mslogin/public/login";
+    session_destroy();
 }
 
 

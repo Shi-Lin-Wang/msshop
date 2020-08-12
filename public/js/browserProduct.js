@@ -33,7 +33,7 @@ function start(){
  // $token = getCookie("token");
   //console.log($token);
   $.ajax({
-    url:"/navSigninCheck",  //呼叫的位址
+    url:"",  //呼叫的位址
     type:"GET",      //請求方式
     data:"",//傳送到server的資料
     dataType:'json', //預期server回傳的形式
@@ -100,7 +100,7 @@ $(function() {
 function init(){
 	$("#query").val("");
 	$.ajax({
-		url:"/browserProduct1",
+		url:"http://140.127.74.145/msshop/public/browserProduct1",
 		type:"POST",
 		data:{"id": shopID},//傳送到server的資料
 		dataType:'json',
@@ -149,8 +149,8 @@ function showProduct(img,name,price,num, id){
 	//alert("num: "+num);
 	var block = $('#block'+num);
 	var check = $('<a/>')
-	.html('<div class="abgne_tip_gallery_block" style="margin:0 auto;"><a href="/viewProduct?id='+id+'"><img src="../uploadImg/'+img+'" class="img-responsive" style="width:213px; height:213px;" alt="Image"></a>'+
-		  '<div class="caption"><h4><a href="/viewProduct?id='+id+'" title="標題" style="line-height: 28px; margin-top:-3px; display:inline-block;">'+ name +'</a></h4><div class="desc" style="padding-right:10px; word-break: break-all;">'+
+	.html('<div class="abgne_tip_gallery_block" style="margin:0 auto;"><a href="http://140.127.74.145/msshop/public/viewProduct?id='+id+'"><img src="uploadImg/'+img+'" class="img-responsive" style="width:213px; height:213px;" alt="Image"></a>'+
+		  '<div class="caption"><h4><a href="http://140.127.74.145/msshop/public/viewProduct?id='+id+'" title="標題" style="line-height: 28px; margin-top:-3px; display:inline-block;">'+ name +'</a></h4><div class="desc" style="padding-right:10px; word-break: break-all;">'+
 		  '$'+price+'</div></div></div><p>$'+price+'</p>')	 //viewProduct
 	.appendTo(block);
 }
@@ -285,7 +285,9 @@ function logout(){
 	now.setTime(now.getTime()-1000*600);
 	document.cookie = "token=null;expires="+now.toGMTString()+";path=/wtlab108;domain=wtlab.ddns.net";
 	//document.cookie = "token=null;expires="+now.toGMTString()+";path=/wtlab108;domain=140.127.74.168";
-	window.location = "../../login";
+	unset($_SESSION['token']);
+	window.location = "http://140.127.74.145/mslogin/public/login";
+	session_destroy();
 }
 
 // Accordion

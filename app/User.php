@@ -19,7 +19,7 @@ class User extends Model implements AuthenticatableContract
      *
      * @var array
      */
-    protected $connections = 'wtlab108';
+    protected $connections = 'lumen';
     protected $table = 'account';
     protected $fillable = [
         'account', 'password','email','phone','updated_at','created_at','id',

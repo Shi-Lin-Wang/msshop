@@ -38,7 +38,7 @@
 
 		<br><br>
 
-		<div style="text-align:center;"><img src="../imgs/LOGO4.png" style="width:100px; margin-top:-12px;"></div>
+		<div style="text-align:center;"><img src="imgs/LOGO4.png" style="width:100px; margin-top:-12px;"></div>
 		<br>
 
 		<button onclick="return myAccFunc(this);" class="btn btn-link w3-block w3-white w3-left-align" id="user" value="1" style="display:inline;"></button>
@@ -72,7 +72,7 @@
 	  <div class="w3-black w3-xlarge" style="max-width:1200px;margin:auto">
 		<div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
 		<div class="w3-right w3-padding-16" id="navRight"></div>
-		<div class="w3-center w3-padding-16"><img src="../imgs/LOGO4.png" style="width:40px; margin-top:-12px;">&nbsp My Shop</div>
+		<div class="w3-center w3-padding-16"><img src="imgs/LOGO4.png" style="width:40px; margin-top:-12px;">&nbsp My Shop</div>
 	  </div>
 	</div>
 

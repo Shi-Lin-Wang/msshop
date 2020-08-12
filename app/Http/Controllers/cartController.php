@@ -43,7 +43,7 @@ class cartController extends Controller
 public function addcart()
 {
 
-    $DBname = 'wtlab108';//資料庫名稱
+    $DBname = 'lumen';//資料庫名稱
     $DBhost = "127.0.0.1";
     $DBuser = 'root';
     $DBpass = '';
@@ -116,7 +116,7 @@ public function cart()
 
 public function getcartDetail()
 {
-    $DBname = 'wtlab108';//資料庫名稱
+    $DBname = 'lumen';//資料庫名稱
     $DBhost = "127.0.0.1";
     $DBuser = 'root';
     $DBpass = '';
@@ -155,7 +155,7 @@ public function getcartDetail()
 }
 public function CartDelete()
 {
-    $DBname = 'wtlab108';//資料庫名稱
+    $DBname = 'lumen';//資料庫名稱
     $DBhost = "127.0.0.1";
     $DBuser = 'root';
     $DBpass = '';
@@ -186,7 +186,7 @@ public function CartDelete()
 
 public function CartToOrder()
 {
-    $DBname = 'wtlab108';//資料庫名稱
+    $DBname = 'lumen';//資料庫名稱
     $DBhost = "127.0.0.1";
     $DBuser = 'root';
     $DBpass = '';
@@ -281,5 +281,3 @@ public function viewOrderDetail()
     return view('viewOrderDetail');
 }
 }
-
-

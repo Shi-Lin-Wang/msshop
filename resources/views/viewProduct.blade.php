@@ -26,6 +26,7 @@ h1 {letter-spacing: 6px}
 <script>
 
 	var url=window.location.toString(); //取得當前網址
+	
 		var id=""; //參數中等號右邊的值
 		if(url.indexOf("?")!=-1){ //如果網址有"?"符號
 			id = decodeURI(url.split("?")[1].split("=")[1]);
@@ -37,7 +38,7 @@ h1 {letter-spacing: 6px}
 
 
 		$.ajax({
-			url:"/viewProduct1",
+			url:"http://140.127.74.145/msshop/public/viewProduct1",
 			type:"POST",
 			dataType:'json',
 			data:{"id": id},
@@ -45,7 +46,7 @@ h1 {letter-spacing: 6px}
 
 				$("#productName").text(product[0].productName);
 				$("#productPrice").html("<br>$"+product[0].productPrice);
-				$("#productImg").html('<img src="../uploadImg/'+product[0].productImage+'" alt="Image" class="imgP">');
+				$("#productImg").html('<img src="uploadImg/'+product[0].productImage+'" alt="Image" class="imgP">');
 				$("#productDescription").html("<br><br><br><br> "+product[0].productDescription);
 
 				if(product[0].stock <= 0){ //確認庫存
@@ -112,7 +113,7 @@ h1 {letter-spacing: 6px}
     <i onclick="w3_close()" class="fa fa-remove w3-button w3-display-topright"></i>
 
     <br><br>
-	<div style="text-align:center;"><img src="../../imgs/LOGO4.png" style="width:100px; margin-top:-12px;"></div>
+	<div style="text-align:center;"><img src="imgs/LOGO4.png" style="width:100px; margin-top:-12px;"></div>
 	<br>
 
 	<button onclick="return myAccFunc(this);" class="btn btn-link w3-block w3-white w3-left-align" id="user" value="1" style="display:inline;"></button>
@@ -146,7 +147,7 @@ h1 {letter-spacing: 6px}
   <div class="w3-black w3-xlarge" style="max-width:1200px;margin:auto">
     <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
     <div class="w3-right w3-padding-16 user" id="navRight"></div>
-    <div class="w3-center w3-padding-16"><img src="../../imgs/LOGO4.png" style="width:40px; margin-top:-12px;">&nbsp My Shop</div>
+    <div class="w3-center w3-padding-16"><img src="imgs/LOGO4.png" style="width:40px; margin-top:-12px;">&nbsp My Shop</div>
   </div>
 </div>
 
@@ -171,7 +172,7 @@ h1 {letter-spacing: 6px}
 
 	<div class="w3-center" id="productPrice" style="font-size:50px;margin-top:150px;margin-bottom:80px;"></div>
 
-	<form method="post" id="myform" action="/addcart">
+	<form method="post" id="myform" action="http://140.127.74.145/mscart/public/addcart">
         <div class="container w3-center" style="margin-bottom:150px;">
 					<!--haru偷偷加的-->
 						 <input type="text" id="productID" name="productID" value="1"  hidden="hidden">

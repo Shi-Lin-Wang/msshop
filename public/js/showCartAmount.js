@@ -2,7 +2,7 @@ var invocation = new XMLHttpRequest();
 
 $(document).ready(function(){
 	$.ajax({
-		url:"/getcart",
+		url:"http://140.127.74.194/msshop/public/getcart",
 		type:"POST",
 		dataType:'json',
 		success: function(amount){

@@ -27,7 +27,7 @@ class browserProductController extends Controller
     public function create()
     {
         //
-        return view('browserProduct');
+        return view('/browserProduct');
     }
 
     /**
@@ -40,7 +40,7 @@ class browserProductController extends Controller
     {
         //
        // $users = DB::connection('account');
-        $DBname = "wtlab108";
+        $DBname = "lumen";
         $DBhost = "127.0.0.1";
         $DBuser = 'root';
         $DBpass = '';
